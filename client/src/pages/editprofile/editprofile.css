@@ -1,0 +1,212 @@
+.edit-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e26868 0%, #eb9494 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1.5rem 2rem;
+  }
+  
+  .form-wrapper {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+  }
+  
+  .title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  
+  .profile-pic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .label {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #1e293b;
+    display: block;
+    text-align: center;
+  }
+  
+  .profile-pic-preview {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e2e8f0;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .profile-pic-preview:hover {
+    border-color: #4f46e5;
+    transform: scale(1.05);
+  }
+  
+  .profile-pic-placeholder {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem;
+    border: 4px dashed #d1d5db;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+  
+  .profile-pic-placeholder:hover {
+    border-color: #4f46e5;
+    background: #e5e7eb;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .input {
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+    color: #1e293b;
+    font-size: 1rem;
+    line-height: 1.5;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  }
+  
+  .input::placeholder {
+    color: #94a3b8;
+  }
+  
+  .button {
+    padding: 0.875rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #16a34a;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .button:hover:not(:disabled) {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+  }
+  
+  .button:focus {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+  }
+  
+  .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+  
+  @media (max-width: 768px) {
+    .edit-page {
+      padding: 4rem 1rem 1.5rem;
+    }
+  
+    .form-wrapper {
+      padding: 2rem;
+      max-width: 400px;
+    }
+  
+    .title {
+      font-size: 1.625rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .profile-pic-preview,
+    .profile-pic-placeholder {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .input {
+      padding: 0.75rem;
+      font-size: 0.9375rem;
+    }
+  
+    .button {
+      padding: 0.75rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .edit-page {
+      padding: 3.5rem 0.75rem 1rem;
+    }
+  
+    .form-wrapper {
+      padding: 1.5rem;
+      max-width: 340px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+  
+    .profile-pic-preview,
+    .profile-pic-placeholder {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .label {
+      font-size: 0.875rem;
+    }
+  
+    .input {
+      padding: 0.625rem;
+      font-size: 0.875rem;
+    }
+  
+    .button {
+      padding: 0.625rem;
+      font-size: 0.8125rem;
+    }
+  }
